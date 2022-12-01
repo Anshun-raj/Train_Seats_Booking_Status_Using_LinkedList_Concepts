@@ -119,21 +119,23 @@ int main()
         case 7:
             printf("\nEnter the only coach-data which you want to remove to update the no. of seats booked:");
             scanf("%d",&data);
+            count=count-data;
             start=delOnly(start,data);
             break;
 
         case 8:
             printf("\nEnter the coach-data which you want to remove from the beginning to update the no. of seats booked:");
             scanf("%d",&data);
+            count=count-data;
             start=delBeg(start,data);
             break;
 
         case 9:
             printf("\nEnter the coach-data which you want to remove from the end to update the no. of seats booked:");
             scanf("%d",&data);
-            count=count-data;
             printf("\nEnter the position:");
             scanf("%d",&pos);
+            count=count-data;
             start=delEnd(start,data,pos);
             break;
 
